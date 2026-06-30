@@ -1,5 +1,5 @@
 # solo-death-speedrun
-Minecraft Datapack (works on any version past 1.18, last tested on 1.21.5) that is a simulation of my [death-speedrun datapack](https://github.com/random1785/death-speedrun) for singleplayer.
+Minecraft Datapack (works on any version past 1.21.5, last tested on 26.2) that is a simulation of my [death-speedrun datapack](https://github.com/random1785/death-speedrun) for singleplayer.
 
 ## Features:
 ### All features of death-speedrun, as well as: <br>
