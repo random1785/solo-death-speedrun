@@ -1,5 +1,10 @@
 function a:murder
 scoreboard players reset *
+
+schedule function a:maingmr5 1t
+schedule function a:maingmr7 2t
+schedule function a:maingmr11 3t
+
 time set 0
 team add a
 team modify a collisionRule pushOwnTeam
@@ -34,18 +39,14 @@ tellraw @a [{"bold":true,"color":"aqua","underline":true,"text":"Singleplayer "}
 
 
 # create spawn platform
-schedule function a:zzzspawn 5t
-execute in the_nether run forceload add -13 -14 25 24
-forceload add 0 0 -1 -1
-place template a:lobbyoverworld3v2 -12 294 -12
-fillbiome -11 298 -11 33 319 12 minecraft:cherry_grove
+fill 10 300 10 -10 319 -10 minecraft:barrier hollow
+fill -9 319 -9 9 319 9 air
+fill -9 300 -9 9 300 9 minecraft:grass_block
 setworldspawn 0 302 0
 spawnpoint @a 0 302 0
 tp @a 0 302 0
 gamemode survival @a
-schedule function a:maingmr7 1t
-schedule function a:maingmr5 2t
-schedule function a:maingmr11 3t
+forceload add -1 -1 0 0
 
 execute unless entity @e[type=minecraft:armor_stand,limit=1,tag=score] run summon minecraft:armor_stand 0 330 0 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["score"]}
 scoreboard players set @e[type=armor_stand,tag=score] round 0

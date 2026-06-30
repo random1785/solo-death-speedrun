@@ -1,5 +1,5 @@
 gamerule doImmediateRespawn true
-gamerule announceAdvancements false
+gamerule announceAdvancements true
 gamerule spawnRadius 2
 gamerule keepInventory false
 gamerule showDeathMessages true
@@ -21,10 +21,9 @@ gamerule naturalRegeneration true
 gamerule doMobSpawning true
 gamerule doDaylightCycle true
 gamerule doWeatherCycle true
+gamerule locatorBar false
 team modify a friendlyFire true
 team modify a seeFriendlyInvisibles true
 team modify a nametagVisibility always
-team modify a collisionRule pushOwnTeam
-team modify a color reset
 schedule clear a:maingmr5
 schedule clear a:maingmr11

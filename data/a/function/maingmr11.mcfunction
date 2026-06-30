@@ -1,5 +1,5 @@
 gamerule immediate_respawn true
-gamerule show_advancement_messages false
+gamerule show_advancement_messages true
 gamerule respawn_radius 2
 gamerule keep_inventory false
 gamerule show_death_messages true
@@ -24,8 +24,7 @@ gamerule spawn_mobs true
 gamerule spawn_monsters true
 gamerule advance_time true
 gamerule advance_weather true
+gamerule locator_bar false
 team modify a friendlyFire true
 team modify a seeFriendlyInvisibles true
 team modify a nametagVisibility always
-team modify a collisionRule pushOwnTeam
-team modify a color reset
